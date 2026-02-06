@@ -14,19 +14,16 @@
 - Key Test 页面实时显示按键类型
 - 结构清晰，便于后续扩展 Counter、EEPROM 等功能
 
-## 硬件环境
-- MCU：AT89C52 / STC89C52
-- 显示模块：LCD1602
-- 按键：独立按键（UP / DOWN / OK）
-
-## 软件环境
-- Keil uVision
-- C51 编译器
+## 🛠️ 硬件与环境
+-微控制器: AT89C52 / STC89C52RC
+-显示: LCD1602 (16x2 Character Display)
+-输入: 3路独立按键 (UP, DOWN, OK)
+-开发工具: Keil uVision 5 (C51 Compiler)
 
 ## 🛠 开发环境
-- "IDE": Keil uVision5
-- "语言": C语言 / 汇编 (STARTUP.A51)
-- "硬件": STC89C52RC 或同系列单片机
+- IDE: Keil uVision5
+- 语言: C语言 / 汇编 (STARTUP.A51)
+- 硬件: STC89C52RC 或同系列单片机
 
 ## ✨ 核心特性
 - **架构解耦**：底层驱动 (Driver) 与业务逻辑 (User) 完全分离，可快速移植至 STC/AT 等不同厂商的 51 系列芯片。
@@ -52,7 +49,7 @@
 │   └── STARTUP.A51   # 芯片启动汇编序列
 └── Objects/          # 编译产物 (已由 .gitignore 排除)
 
-## 📁 目录说明
+##  📁 目录说明
 - "Driver": 存放底层硬件驱动（LCD1602驱动、按键扫描、EEPROM读写）
 - "System": 存放系统组件（精确延时函数、定时器初始化）
 - "User": 存放应用层逻辑（main函数、中断服务程序）
@@ -61,6 +58,11 @@
 1. **模块化设计**：驱动层与应用层分离，移植性强。
 2. **状态机逻辑**：菜单跳转逻辑清晰，易于扩展功能。
 3. **版本控制**：使用 Git 进行精细化版本管理。
+
+## 🚀 快速上手
+-使用 Keil 5 打开工程文件。
+-在 Options for Target -> C51 -> Include Paths 中包含 Driver、System、User 文件夹。
+-编译生成 .hex 文件，通过 STC-ISP 或相关工具下载至开发板。
    
 ## 作者
 saint77777777
