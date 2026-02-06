@@ -2,11 +2,11 @@
 # 51 Menu UI System (LCD1602)
 
 ## 项目简介
--本项目是一个基于 **8051内核单片机** 和 **LCD1602** 实现的模块化菜单系统。
--基于 AT89C52 单片机，使用 LCD1602 显示模块和独立按键，
--实现了一个菜单式人机交互系统。
--系统采用状态机方式管理界面逻辑，支持页面切换与按键响应，
--通过按键边沿检测与软件消抖提高系统稳定性。
+- 本项目是一个基于 **8051内核单片机** 和 **LCD1602** 实现的模块化菜单系统。
+- 基于 AT89C52 单片机，使用 LCD1602 显示模块和独立按键，
+- 实现了一个菜单式人机交互系统。
+- 系统采用状态机方式管理界面逻辑，支持页面切换与按键响应，
+- 通过按键边沿检测与软件消抖提高系统稳定性。
 
 ## 功能说明
 - 主菜单（Welcome / Key Test）
@@ -14,13 +14,11 @@
 - Key Test 页面实时显示按键类型
 - 结构清晰，便于后续扩展 Counter、EEPROM 等功能
 
-## 🛠️ 硬件与环境
--微控制器: AT89C52 / STC89C52RC
--显示: LCD1602 (16x2 Character Display)
--输入: 3路独立按键 (UP, DOWN, OK)
--开发工具: Keil uVision 5 (C51 Compiler)
-
-## 🛠 开发环境
+## 🛠️ 软硬件与开发环境
+- 微控制器: AT89C52 / STC89C52RC
+- 显示: LCD1602 (16x2 Character Display)
+- 输入: 3路独立按键 (UP, DOWN, OK)
+- 开发工具: Keil uVision 5 (C51 Compiler)
 - IDE: Keil uVision5
 - 语言: C语言 / 汇编 (STARTUP.A51)
 - 硬件: STC89C52RC 或同系列单片机
@@ -60,9 +58,9 @@
 3. **版本控制**：使用 Git 进行精细化版本管理。
 
 ## 🚀 快速上手
--使用 Keil 5 打开工程文件。
--在 Options for Target -> C51 -> Include Paths 中包含 Driver、System、User 文件夹。
--编译生成 .hex 文件，通过 STC-ISP 或相关工具下载至开发板。
+- 使用 Keil 5 打开工程文件。
+- 在 Options for Target -> C51 -> Include Paths 中包含 Driver、System、User 文件夹。
+- 编译生成 .hex 文件，通过 STC-ISP 或相关工具下载至开发板。
    
 ## 作者
 saint77777777
