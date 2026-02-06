@@ -1,9 +1,9 @@
-".\Objects\STARTUP.obj",
 ".\Objects\main.obj",
-".\Objects\lcd.obj",
-".\Objects\key.obj",
+".\Objects\STARTUP.obj",
 ".\Objects\delay.obj",
 ".\Objects\timer0.obj",
-".\Objects\eeprom.obj" 
+".\Objects\eeprom.obj",
+".\Objects\key.obj",
+".\Objects\lcd.obj" 
 TO ".\Objects\1" 
 PRINT(".\Listings\1.m51") RAMSIZE(256) 
